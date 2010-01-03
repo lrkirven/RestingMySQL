@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project default="generateRestMySQLIbator">
+	<target name="generateRestMySQLIbator">
+		<eclipse.convertPath resourcepath="rest_mysql_build/resources/ibatorConfig-restmysql.xml" property="thePath"/>
+	</target>
+</project>

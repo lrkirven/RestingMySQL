@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ibatorConfiguration
+  PUBLIC "-//Apache Software Foundation//DTD Apache iBATIS Ibator Configuration 1.0//EN"
+  "http://ibatis.apache.org/dtd/ibator-config_1_0.dtd">
+
+  <ibatorConfiguration>
+	<ibatorContext id="ibatorContext" targetRuntime="Ibatis2Java5" defaultModelType="flat">
+		<ibatorPlugin type="org.apache.ibatis.ibator.plugins.SerializablePlugin"/>
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"  connectionURL="jdbc:mysql://localhost:3306/globalbase" userId="sysadmin" 
+			password="sysadmin">
+    		</jdbcConnection>
+		<javaModelGenerator targetPackage="com.zarcode.db.ibatis.vo.global"  targetProject="diet_crm_java\src">  
+			<property name="enableSubPackages" value="false" />  
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+		<sqlMapGenerator targetPackage="com.zarcode.db.ibatis.maps.global"  targetProject="diet_crm_java\src">
+			<property name="enableSubPackages" value="false" />
+		</sqlMapGenerator>
+		<daoGenerator type="SPRING" targetPackage="com.zarcode.db.ibatis.dao.global" targetProject="diet_crm_java\src">  
+			<property name="enableSubPackages" value="false" />  
+			<property name="methodNameCalculator" value="extended" />
+		</daoGenerator>
+		<table tableName="questionbase" domainObjectName="QuestionBase">
+			<generatedKey column="quid" sqlStatement="MySQL" identity="true" />
+		</table>
+		<table tableName="questionoptions" domainObjectName="QuestionOptions">
+			<generatedKey column="optId" sqlStatement="MySQL" identity="true" />
+		</table>
+		<table tableName="publiccodemap" domainObjectName="PublicCodeMap" />
+		<table tableName="customerdata" domainObjectName="CustomerData">
+			<generatedKey column="custId" sqlStatement="MySQL" identity="true" />
+		</table>
+		<table tableName="customermap" domainObjectName="CustomerMap" />
+		<table tableName="users" domainObjectName="Users" />
+	</ibatorContext>
+</ibatorConfiguration>

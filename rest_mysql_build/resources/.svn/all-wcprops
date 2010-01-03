@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/zarcode/!svn/ver/8/ibator/resources
+END
+ibatorConfig-global.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/zarcode/!svn/ver/8/ibator/resources/ibatorConfig-global.xml
+END
+ibatorConfig-restmysql.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/zarcode/!svn/ver/8/ibator/resources/ibatorConfig-restmysql.xml
+END
+ibatorConfig-dietcrm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/zarcode/!svn/ver/8/ibator/resources/ibatorConfig-dietcrm.xml
+END

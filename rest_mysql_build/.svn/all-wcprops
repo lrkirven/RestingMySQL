@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/zarcode/!svn/ver/9/rest_mysql_build
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/zarcode/!svn/ver/10/rest_mysql_build/.classpath
+END
+env-test.properties
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/zarcode/!svn/ver/10/rest_mysql_build/env-test.properties
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/zarcode/!svn/ver/10/rest_mysql_build/.project
+END
+env-prod.properties
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/zarcode/!svn/ver/10/rest_mysql_build/env-prod.properties
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/zarcode/!svn/ver/10/rest_mysql_build/build.properties
+END
+env-local.properties
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/zarcode/!svn/ver/10/rest_mysql_build/env-local.properties
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/zarcode/!svn/ver/10/rest_mysql_build/build.xml
+END

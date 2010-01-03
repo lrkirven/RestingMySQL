@@ -1,0 +1,93 @@
+# -----------------------------------------------------------------------------
+# project name
+# -----------------------------------------------------------------------------
+project.name=rest_mysql
+html_file=rest_mysql.html
+prod.name=rest_mysql
+project.build.name=${project.name}_build
+project.java.name=${project.name}_java
+project.flex.name=${project.name}_flex
+env.default=local
+ver.default=HEAD
+
+flex.sdk.dir=C:\Program Files\Adobe\Flex Builder 3 Plug-in\sdks\3.3.0
+tomcat.lib.dir=C:\\Program Files\\Apache Software Foundation\\Tomcat 6.0\\lib
+
+# -----------------------------------------------------------------------------
+# Base
+# -----------------------------------------------------------------------------
+root.dir=${basedir}/..
+project.build
+project.build.dir=${root.dir}/${project.build.name}
+project.java.dir=${root.dir}/${project.java.name}
+project.flex.dir=${root.dir}/${project.flex.name}
+web.dir = ${project.java.dir}/web
+webinf.dir = ${web.dir}/WEB-INF
+webinf.classes.dir = ${webinf.dir}/classes
+
+# -----------------------------------------------------------------------------
+# Flex Compilation and libraries
+# -----------------------------------------------------------------------------
+flex.compile.home=${env.FLEX_HOME}
+flex.compile.load-config=${flex.compile.home}/frameworks/flex-config.xml
+flex.compile.source-path=${flex.compile.home}/frameworks
+flex.compile.lib=lib
+flex.src.dir= ${project.flex.dir}/src
+
+# -----------------------------------------------------------------------------
+# Java Compilation and libraries
+# -----------------------------------------------------------------------------
+java.compile.debug = off
+java.compile.optimize = on
+java.compile.depreciation = on
+java.src.dir = ${project.java.dir}/src
+java.test.dir = ${project.java.dir}/src/test
+java.lib.dir=${project.java.dir}/web/WEB-INF/lib
+java.webContent.dir=${project.java.dir}/WebContent
+java.lib.files = *.jar
+
+# -----------------------------------------------------------------------------
+# Build
+# -----------------------------------------------------------------------------
+build.dir = ${project.build.dir}/target
+build.java.src.dir = ${build.dir}/src/java
+build.java.cfg.dir = ${build.dir}/WebContent/WEB-INF
+build.java.test.dir = ${build.dir}/src/test
+build.flex.src.dir = ${build.dir}/src/flex
+build.flex.ant.lib = ${project.build.dir}/lib/flexTasks.jar
+build.classes.dir = ${build.dir}/classes
+build.swf.dir=${build.dir}/swf
+build.docs.dir = ${build.dir}/docs
+build.dist.dir = ${build.dir}/dist
+build.dist.war.dir = ${build.dist.dir}/war
+build.web.dir = ${build.dist.dir}/web
+war.expanded.dir = ${build.dist.war.dir}/restmysql
+war.packed.file = ${build.dist.war.dir}/restmysql.war
+
+# -----------------------------------------------------------------------------
+# Deployment
+# -----------------------------------------------------------------------------
+app.version = 1.0-dev
+app.name = Diet CRM Version 2 ${app.version}
+war.name = restmysql-${app.version}
+war.context = foowi
+war.context.file = ROOT.xml
+
+# -----------------------------------------------------------------------------
+# Project Template
+# -----------------------------------------------------------------------------
+template.name=rest_mysql
+template.dest.dir=c:/tmp
+template.flex.src.dir=${template.name}_flex
+template.java.src.dir=${template.name}_java
+template.build.src.dir=${template.name}_build
+template.flex.dest.dir=${new.project.name}_flex
+template.java.dest.dir=${new.project.name}_java
+template.build.dest.dir=${new.project.name}_build
+
+#bin.dir = ${basedir}/bin
+#res.dir = ${basedir}/resources
+#res.templates.dir = ${res.dir}/templates
+#res.sql.dir = ${res.dir}/sql
+#res.classes.dir = ${res.dir}/classes
+#webinf.lib.dir = ${project.java.dir}/lib
