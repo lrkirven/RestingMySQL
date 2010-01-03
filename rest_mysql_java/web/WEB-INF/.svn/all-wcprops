@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/zarcode/!svn/ver/12/rest_mysql_java/web/WEB-INF
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/zarcode/!svn/ver/12/rest_mysql_java/web/WEB-INF/web.xml
+END
+log4j.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/zarcode/!svn/ver/12/rest_mysql_java/web/WEB-INF/log4j.xml
+END
