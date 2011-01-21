@@ -67,9 +67,9 @@ public class BookResource {
 		}
 		logger.info("getBooks(): bookid=" + id);
 		
+		BookExample where = null;
 		if (bookDAO != null) {
 			xmlStr = "<Books>";
-			BookExample where = null;
 			if (id != null) {
 				where = new BookExample();
 				BookExample.Criteria cr = where.createCriteria();
