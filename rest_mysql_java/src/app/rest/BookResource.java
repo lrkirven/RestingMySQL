@@ -47,6 +47,7 @@ public class BookResource {
 	
 	String container = null;
 	
+	// Logger
 	private Logger logger = Logger.getLogger(BookResource.class.getName());
 	
 	@GET @Path("{bookid}")
